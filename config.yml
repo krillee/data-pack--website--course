@@ -1,0 +1,18 @@
+title: Data pack (WEBSITE)
+description: >-
+  We are making a website if you wanna visit and take some lessions then check
+  here !!
+template:
+  repo: data-pack-(website)-template
+  name: data-pack-(website)
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
